@@ -39,7 +39,7 @@ class consul::params {
   $ui_package_ensure     = 'latest'
   $ui_package_name       = 'consul_ui'
   $user                  = 'consul'
-  $version               = '0.7.4'
+  $version               = '1.6.2'
   $watches               = {}
 
   case $::architecture {

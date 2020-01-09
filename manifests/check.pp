@@ -21,7 +21,7 @@
 # [*notes*]
 #   Human readable description of the check
 #
-# [*script*]
+# [*args*]
 #   Full path to the location of the healthcheck script. Must be nagios
 #   compliant with regards to the return codes.
 #
@@ -52,7 +52,7 @@ define consul::check(
   $id         = $title,
   $interval   = undef,
   $notes      = undef,
-  $script     = undef,
+  $args       = undef,
   $service_id = undef,
   $status     = undef,
   $tcp        = undef,
@@ -67,7 +67,7 @@ define consul::check(
     'name'       => $name,
     'ttl'        => $ttl,
     'http'       => $http,
-    'script'     => $script,
+    'args'       => $args,
     'tcp'        => $tcp,
     'interval'   => $interval,
     'timeout '   => $timeout,

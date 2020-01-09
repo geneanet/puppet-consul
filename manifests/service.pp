@@ -56,7 +56,7 @@ define consul::service(
     'tags'              => $tags,
     'checks'            => $checks,
     'token'             => $token,
-    'enableTagOverride' => $enable_tag_override,
+    'enable_tag_override' => $enable_tag_override,
   }
 
   $service_hash = {
